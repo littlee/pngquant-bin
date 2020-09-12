@@ -1,39 +1,39 @@
+# pngquant-bin-mirror
+
+use https://npm.taobao.org/mirrors/pngquant-bin/ as downlaod source
+
 # pngquant-bin [![Build Status](https://travis-ci.org/imagemin/pngquant-bin.svg?branch=master)](https://travis-ci.org/imagemin/pngquant-bin)
 
 > [`pngquant`](https://github.com/kornelski/pngquant) is a PNG compressor that significantly reduces file sizes by converting images to a more efficient 8-bit PNG format
 
 You probably want [`imagemin-pngquant`](https://github.com/imagemin/imagemin-pngquant) instead.
 
-
 ## Install
 
 ```
-$ npm install pngquant-bin
+$ npm install pngquant-bin-mirror
 ```
-
 
 ## Usage
 
 ```js
-const {execFile} = require('child_process');
-const pngquant = require('pngquant-bin');
+const { execFile } = require("child_process");
+const pngquant = require("pngquant-bin-mirror");
 
-execFile(pngquant, ['-o', 'output.png', 'input.png'], err => {
-	console.log('Image minified!');
+execFile(pngquant, ["-o", "output.png", "input.png"], (err) => {
+	console.log("Image minified!");
 });
 ```
-
 
 ## CLI
 
 ```
-$ npm install --global pngquant-bin
+$ npm install --global pngquant-bin-mirror
 ```
 
 ```
 $ pngquant --help
 ```
-
 
 ## Updating pre-compiled binaries
 
